@@ -16,7 +16,7 @@ from PIL import Image
 from ultralytics import YOLO
 
 # -------------------------- 模型配置（你的路径，不用改）--------------------------
-MODEL_PATH = "./runs/runs/train/steel_defect_detector/weights/best.pt"
+MODEL_PATH = "best.pt"
 CLASS_NAMES = ['crazing', 'inclusion', 'patches', 'pitted_surface', 'rolled-in_scale', 'scratches']
 # --------------------------------------------------------------------------------
 
