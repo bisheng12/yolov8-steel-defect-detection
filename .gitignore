@@ -1,0 +1,15 @@
+# Python临时文件
+__pycache__/
+*.pyc
+
+# 运行生成的结果文件夹
+batch_results/
+batch_results_fixed/
+batch_results_optimized/
+batch_tool_results/
+runs/
+
+# 图片文件（不用上传到仓库）
+*.jpg
+*.png
+*.jpeg
