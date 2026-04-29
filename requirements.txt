@@ -1,10 +1,10 @@
-# 1. 先装无界面版OpenCV，满足ultralytics的依赖，让它不再装会报错的opencv-python
-opencv-python-headless>=4.8.0
+# 1. 先装无界面版OpenCV，满足ultralytics的依赖，阻止它安装普通opencv-python
+opencv-python-headless
 
-# 2. 再装ultralytics，此时它会认为OpenCV已经安装，不会再拉取普通版opencv-python
+# 2. 再装ultralytics，此时它会认为OpenCV已安装，不会再拉取普通版
 ultralytics
 
-# 3. 其他依赖按顺序写，和你本地的版本兼容即可
+# 3. 其他依赖按顺序写，不带版本号，让Streamlit自动安装兼容版本
 streamlit
 pillow
 torch
