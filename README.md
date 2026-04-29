@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 钢材表面缺陷检测系统
 基于 YOLOv8 的钢材缺陷智能检测可视化工具
 
@@ -9,3 +10,7 @@
 
 ## 缺陷类别
 crazing, inclusion, patches, pitted_surface, rolled-in_scale, scratches
+=======
+# yolov8-steel-defect-detection
+基于YOLOv8的钢材表面缺陷检测项目
+>>>>>>> ea94612ff6386d726292fde993414d53217bd459
