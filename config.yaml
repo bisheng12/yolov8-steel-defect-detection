@@ -1,0 +1,19 @@
+# -------------------------- 路径配置 --------------------------
+model_path: "./runs/runs/train/steel_defect_detector/weights/best.pt"  # 你的模型路径
+save_folder: "./batch_tool_results/"  # 批量检测结果保存路径
+
+# -------------------------- 检测参数（根据效果调整） --------------------------
+conf_threshold: 0.1  # 置信度阈值：越低漏检越少，但误检会变多
+iou_threshold: 0.2   # IOU阈值：越低越不会把小框合并成大框
+max_det: 100         # 单图最多检测多少个框
+imgsz: 1280          # 输入尺寸：越大对小缺陷越敏感，但速度越慢
+multi_scale: True     # 多尺度推理：True开启，提升小缺陷检出率
+
+# -------------------------- 类别配置（不用改） --------------------------
+class_names:
+  - crazing
+  - inclusion
+  - patches
+  - pitted_surface
+  - rolled-in_scale
+  - scratches

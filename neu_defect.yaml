@@ -1,0 +1,7 @@
+# 从code目录出发，找到根目录下的dataset/neu_defect
+path: ../dataset/neu_defect
+train: train/images
+val: val/images
+
+nc: 6
+names: ['crazing', 'inclusion', 'patches', 'pitted_surface', 'rolled-in_scale', 'scratches']
