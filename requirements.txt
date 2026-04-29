@@ -1,5 +1,12 @@
-streamlit
+# 1. 先装无界面版OpenCV，满足ultralytics的依赖，让它不再装会报错的opencv-python
+opencv-python-headless>=4.8.0
+
+# 2. 再装ultralytics，此时它会认为OpenCV已经安装，不会再拉取普通版opencv-python
 ultralytics
+
+# 3. 其他依赖按顺序写，和你本地的版本兼容即可
+streamlit
 pillow
 torch
 torchvision
+numpy
